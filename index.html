@@ -10,7 +10,7 @@
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 
-<title>SKLearn Tutorial slides</title>
+<title>sklearn slides</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -13324,18 +13324,6 @@ a.anchor-link {
 
 <div class="output_area">
 
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Downloading 20news dataset. This may take a few minutes.
-Downloading dataset from https://ndownloader.figshare.com/files/5975967 (14 MB)
-</pre>
-</div>
-</div>
-
-<div class="output_area">
-
     <div class="prompt output_prompt">Out[1]:</div>
 
 
@@ -13382,7 +13370,7 @@ Downloading dataset from https://ndownloader.figshare.com/files/5975967 (14 MB)
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">train_test_split</span>
@@ -13403,7 +13391,7 @@ Downloading dataset from https://ndownloader.figshare.com/files/5975967 (14 MB)
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[74]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Always look at the data before making feature engineering decisions</span>
@@ -13425,42 +13413,36 @@ Downloading dataset from https://ndownloader.figshare.com/files/5975967 (14 MB)
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>From: mwbg9715@uxa.cso.uiuc.edu (Mark Wayne Blunier)
-Subject: Re: male/female mystery [ Re: Dumbest automotive concepts of all time ]
-Article-I.D.: news.C52M5t.n55
-Organization: University of Illinois at Urbana
-Lines: 30
+<pre>From: mark@taylor.uucp (Mark A. Davis)
+Subject: Re: Blinking Cursor in Xterm???
+Organization: Lake Taylor Hospital Computer Services
+Lines: 25
 
-bets@chester.ksu.ksu.edu (Beth Schwindt) writes:
+barmar@think.com (Barry Margolin) writes:
 
-&gt;&gt;This has me thinking.  Is there a biological reason why women can&#39;t put
-&gt;&gt;their keys in their pants pockets like men do?  I have two pockets on the
-&gt;&gt;back of each of my pants.  I put my keys in one and wallent in another.
-&gt;&gt;Many of the pockets even have a botton on them so I can close them securely.
-&gt;&gt;Everything is that much simpler for me.  Why can&#39;t women do the same?
-&gt;&gt;Is is biological (ie, not enough room for a bigger bottom plus keys and
-&gt;&gt;a wallet) or is it the way they are raised by the parents? 
+&gt;In article &lt;1993May18.130845.6859@taylor.uucp&gt; mark@taylor.uucp (Mark A. Davis) writes:
+&gt;&gt;You are stuck in a distributed system feedback loop!  What if you are on an
+&gt;&gt;Xterminal or running xterm over the net to another machine?  That is when the
+&gt;&gt;load problems occur.  If you had a machine with 20 Xterminals attached and
+&gt;&gt;they all had blinking cursors in xterm&#39;s, this could represent a considerable
+&gt;&gt;ethernet bandwidth waste.
 
-&gt;I&#39;ve found that it has to do with the way women&#39;s clothes are made.
-&gt;If you put keys in the front pocket of women&#39;s jeans or slacks, you
-&gt;get a bulge that also tends to make it impossible to sit down because
-&gt;they stick you constantly.  ditto in the back pocket.
+&gt;Ethernet certainly has enough bandwidth for a few blinking cursors.  My
+&gt;Lisp Machine blinks the cursor twice a second and updates the time in the
+&gt;status line every second.  This uses under 1K bytes/second, or about .1% of
+&gt;the bandwidth of Ethernet.  A hundred of them on a single ethernet might be
+&gt;a problem, but a couple dozen should be fine.
 
-&gt;Also, try *looking* at the back pockets of women&#39;s jeans and compare
-&gt;them to the back pockets on men&#39;s jeans.  They are usually (if you buy
-&gt;jeans that you expect to last for any length of time) about half the
-&gt;size.  There flat out isn&#39;t *room* for a wallet or a bunch of keys.
-
-&gt;Besides which, where would men put all their crap if their wives
-&gt;didn&#39;t carry purses? :-)
-
-The same place single men do, wallet in back pocket, comb in other
-back pocket, keys in front pocket, knive in other from pocket, pen
-in shirt pocket, or front pants pocket.  Or do married men start
-carrying around a bunch of stuff to keep there women happy?
-
-&gt;Beth
-Mark B.
+Granted it&#39;s nothing to loose sleep over, but this is Ethernet&#39;s tragic flaw:
+the more activity (especially lots of tiny activity), the more collisions
+happen and the performance gets exponentially worse...  I am just now
+opposing ANY kind of waste of bandwidth under Ethernet.  Although in a polling
+system it would not be so bad.
+-- 
+  /--------------------------------------------------------------------------\
+  | Mark A. Davis    | Lake Taylor Hospital | Norfolk, VA (804)-461-5001x431 |
+  | Sys.Administrator|  Computer Services   | mark@taylor / mark@taylor.UUCP |
+  \--------------------------------------------------------------------------/
 
 </pre>
 </div>
@@ -13488,7 +13470,7 @@ d3 = "Banana Apple Banana Apple" ==&gt;&gt; [2,2]</code></pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">CountVectorizer</span>
@@ -13541,7 +13523,7 @@ d3 = "Banana Apple Banana Apple" ==&gt;&gt; [2,2]</code></pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">TfidfTransformer</span>
@@ -13569,7 +13551,7 @@ d3 = "Banana Apple Banana Apple" ==&gt;&gt; [2,2]</code></pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.preprocessing</span> <span class="k">import</span> <span class="n">Normalizer</span>
@@ -13599,7 +13581,7 @@ d3 = "Banana Apple Banana Apple" ==&gt;&gt; [2,2]</code></pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># We will by using MultinomialNB but there are many other good choices</span>
@@ -13621,7 +13603,7 @@ d3 = "Banana Apple Banana Apple" ==&gt;&gt; [2,2]</code></pre>
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn</span> <span class="k">import</span> <span class="n">metrics</span>
@@ -13646,30 +13628,30 @@ d3 = "Banana Apple Banana Apple" ==&gt;&gt; [2,2]</code></pre>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>                          precision    recall  f1-score   support
 
-             alt.atheism       0.88      0.76      0.82       169
-           comp.graphics       0.85      0.78      0.82       195
- comp.os.ms-windows.misc       0.78      0.86      0.82       187
-comp.sys.ibm.pc.hardware       0.80      0.85      0.83       207
-   comp.sys.mac.hardware       0.93      0.84      0.88       191
-          comp.windows.x       0.96      0.81      0.88       229
-            misc.forsale       0.97      0.73      0.84       196
-               rec.autos       0.95      0.89      0.92       209
-         rec.motorcycles       0.91      0.96      0.93       184
-      rec.sport.baseball       0.93      0.99      0.96       178
-        rec.sport.hockey       0.94      0.99      0.96       201
-               sci.crypt       0.73      0.98      0.84       190
-         sci.electronics       0.87      0.81      0.84       186
-                 sci.med       0.95      0.89      0.92       188
-               sci.space       0.88      0.95      0.91       194
-  soc.religion.christian       0.62      0.99      0.76       214
-      talk.politics.guns       0.75      0.95      0.84       185
-   talk.politics.mideast       0.93      0.99      0.96       199
-      talk.politics.misc       0.98      0.60      0.75       156
-      talk.religion.misc       0.96      0.21      0.34       112
+             alt.atheism       0.90      0.73      0.80       178
+           comp.graphics       0.85      0.74      0.79       192
+ comp.os.ms-windows.misc       0.86      0.84      0.85       208
+comp.sys.ibm.pc.hardware       0.71      0.91      0.79       182
+   comp.sys.mac.hardware       0.93      0.82      0.87       188
+          comp.windows.x       0.95      0.82      0.88       212
+            misc.forsale       0.90      0.70      0.79       192
+               rec.autos       0.86      0.89      0.87       186
+         rec.motorcycles       0.98      0.96      0.97       209
+      rec.sport.baseball       0.97      0.95      0.96       201
+        rec.sport.hockey       0.91      0.99      0.95       206
+               sci.crypt       0.74      0.98      0.84       192
+         sci.electronics       0.89      0.72      0.80       195
+                 sci.med       0.97      0.93      0.95       197
+               sci.space       0.89      0.97      0.93       186
+  soc.religion.christian       0.61      0.97      0.75       216
+      talk.politics.guns       0.66      0.98      0.79       162
+   talk.politics.mideast       0.86      0.96      0.91       182
+      talk.politics.misc       0.99      0.57      0.73       160
+      talk.religion.misc       1.00      0.19      0.32       126
 
-               micro avg       0.86      0.86      0.86      3770
-               macro avg       0.88      0.84      0.84      3770
-            weighted avg       0.88      0.86      0.85      3770
+               micro avg       0.85      0.85      0.85      3770
+               macro avg       0.87      0.83      0.83      3770
+            weighted avg       0.87      0.85      0.84      3770
 
 </pre>
 </div>
@@ -13678,15 +13660,43 @@ comp.sys.ibm.pc.hardware       0.80      0.85      0.83       207
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Pipeline">Pipeline<a class="anchor-link" href="#Pipeline">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h4 id="Notice-how-there-is-a-repetitive-structure-our-code:">Notice how there is a repetitive structure our code:<a class="anchor-link" href="#Notice-how-there-is-a-repetitive-structure-our-code:">&#182;</a></h4><p><img src="http://drive.google.com/uc?export=view&id=1D7Fc3Cv5rBl9-XvaVpCdtSGLs4u-knJu" width="1000"></p>
+<h4 id="This-calls-for-abstraction!">This calls for abstraction!<a class="anchor-link" href="#This-calls-for-abstraction!">&#182;</a></h4>
+</div>
+</div>
 </div></section></section><section><section>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="SKLearn-Pipeline">SKLearn Pipeline<a class="anchor-link" href="#SKLearn-Pipeline">&#182;</a></h2><ul>
+<h2 id="SKLearn-Pipeline">SKLearn Pipeline<a class="anchor-link" href="#SKLearn-Pipeline">&#182;</a></h2><p>Why?</p>
+<ul>
 <li>abstraction</li>
 <li>k-fold cross validation</li>
 <li>keeping track of hyperparameters</li>
 </ul>
+<p>How?</p>
+<ul>
+<li>Chains a series of transformers followed by an estimator passing data from one program to another</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="SKLearn-Pipeline">SKLearn Pipeline<a class="anchor-link" href="#SKLearn-Pipeline">&#182;</a></h2><p><img src="http://docs.google.com/drawings/d/e/2PACX-1vQjzopDKBYU5J0vlQma0a3nQ_6KQulscS5P3CYlWEhAIVey3Ofj1U7_f4QRZvE4W0Nzaq7AYdzQLpOD/pub?w=463&amp;h=531" alt=""></p>
 
 </div>
 </div>
@@ -13700,7 +13710,7 @@ comp.sys.ibm.pc.hardware       0.80      0.85      0.83       207
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="k">import</span> <span class="n">Pipeline</span>
@@ -13735,30 +13745,30 @@ comp.sys.ibm.pc.hardware       0.80      0.85      0.83       207
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>                          precision    recall  f1-score   support
 
-             alt.atheism       0.88      0.76      0.82       169
-           comp.graphics       0.85      0.78      0.82       195
- comp.os.ms-windows.misc       0.78      0.86      0.82       187
-comp.sys.ibm.pc.hardware       0.80      0.85      0.83       207
-   comp.sys.mac.hardware       0.93      0.84      0.88       191
-          comp.windows.x       0.96      0.81      0.88       229
-            misc.forsale       0.97      0.73      0.84       196
-               rec.autos       0.95      0.89      0.92       209
-         rec.motorcycles       0.91      0.96      0.93       184
-      rec.sport.baseball       0.93      0.99      0.96       178
-        rec.sport.hockey       0.94      0.99      0.96       201
-               sci.crypt       0.73      0.98      0.84       190
-         sci.electronics       0.87      0.81      0.84       186
-                 sci.med       0.95      0.89      0.92       188
-               sci.space       0.88      0.95      0.91       194
-  soc.religion.christian       0.62      0.99      0.76       214
-      talk.politics.guns       0.75      0.95      0.84       185
-   talk.politics.mideast       0.93      0.99      0.96       199
-      talk.politics.misc       0.98      0.60      0.75       156
-      talk.religion.misc       0.96      0.21      0.34       112
+             alt.atheism       0.90      0.73      0.80       178
+           comp.graphics       0.85      0.74      0.79       192
+ comp.os.ms-windows.misc       0.86      0.84      0.85       208
+comp.sys.ibm.pc.hardware       0.71      0.91      0.79       182
+   comp.sys.mac.hardware       0.93      0.82      0.87       188
+          comp.windows.x       0.95      0.82      0.88       212
+            misc.forsale       0.90      0.70      0.79       192
+               rec.autos       0.86      0.89      0.87       186
+         rec.motorcycles       0.98      0.96      0.97       209
+      rec.sport.baseball       0.97      0.95      0.96       201
+        rec.sport.hockey       0.91      0.99      0.95       206
+               sci.crypt       0.74      0.98      0.84       192
+         sci.electronics       0.89      0.72      0.80       195
+                 sci.med       0.97      0.93      0.95       197
+               sci.space       0.89      0.97      0.93       186
+  soc.religion.christian       0.61      0.97      0.75       216
+      talk.politics.guns       0.66      0.98      0.79       162
+   talk.politics.mideast       0.86      0.96      0.91       182
+      talk.politics.misc       0.99      0.57      0.73       160
+      talk.religion.misc       1.00      0.19      0.32       126
 
-               micro avg       0.86      0.86      0.86      3770
-               macro avg       0.88      0.84      0.84      3770
-            weighted avg       0.88      0.86      0.85      3770
+               micro avg       0.85      0.85      0.85      3770
+               macro avg       0.87      0.83      0.83      3770
+            weighted avg       0.87      0.85      0.84      3770
 
 </pre>
 </div>
@@ -13777,7 +13787,7 @@ comp.sys.ibm.pc.hardware       0.80      0.85      0.83       207
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.model_selection</span> <span class="k">import</span> <span class="n">RandomizedSearchCV</span>
@@ -13786,7 +13796,7 @@ comp.sys.ibm.pc.hardware       0.80      0.85      0.83       207
 
 <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;vect__ngram_range&quot;</span><span class="p">:</span> <span class="p">[(</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">),(</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">),(</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">)],</span>
           <span class="s2">&quot;tfidf__use_idf&quot;</span><span class="p">:</span> <span class="p">[</span><span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">],</span>
-          <span class="s2">&quot;clf__alpha&quot;</span><span class="p">:</span> <span class="n">uniform</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">11</span><span class="p">)}</span>
+          <span class="s2">&quot;clf__alpha&quot;</span><span class="p">:</span> <span class="n">uniform</span><span class="p">(</span><span class="mf">1e-2</span><span class="p">,</span> <span class="mf">1e-3</span><span class="p">)}</span>
 
 <span class="n">seed</span> <span class="o">=</span> <span class="mi">551</span> <span class="c1"># Very important for repeatibility in experiments!</span>
 
@@ -13809,7 +13819,7 @@ comp.sys.ibm.pc.hardware       0.80      0.85      0.83       207
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Fitting 2 folds for each of 1 candidates, totalling 2 fits
-[CV] clf__alpha=8.436949564869531, tfidf__use_idf=True, vect__ngram_range=(1, 2) 
+[CV] clf__alpha=0.010640064047894703, tfidf__use_idf=False, vect__ngram_range=(1, 1) 
 </pre>
 </div>
 </div>
@@ -13831,8 +13841,8 @@ comp.sys.ibm.pc.hardware       0.80      0.85      0.83       207
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[CV]  clf__alpha=8.436949564869531, tfidf__use_idf=True, vect__ngram_range=(1, 2), score=0.697998143974546, total=  17.6s
-[CV] clf__alpha=8.436949564869531, tfidf__use_idf=True, vect__ngram_range=(1, 2) 
+<pre>[CV]  clf__alpha=0.010640064047894703, tfidf__use_idf=False, vect__ngram_range=(1, 1), score=0.8775347912524851, total=   7.6s
+[CV] clf__alpha=0.010640064047894703, tfidf__use_idf=False, vect__ngram_range=(1, 1) 
 </pre>
 </div>
 </div>
@@ -13843,7 +13853,7 @@ comp.sys.ibm.pc.hardware       0.80      0.85      0.83       207
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:   23.6s remaining:    0.0s
+<pre>[Parallel(n_jobs=1)]: Done   1 out of   1 | elapsed:   11.3s remaining:    0.0s
 </pre>
 </div>
 </div>
@@ -13854,7 +13864,7 @@ comp.sys.ibm.pc.hardware       0.80      0.85      0.83       207
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[CV]  clf__alpha=8.436949564869531, tfidf__use_idf=True, vect__ngram_range=(1, 2), score=0.6583034647550776, total=  18.7s
+<pre>[CV]  clf__alpha=0.010640064047894703, tfidf__use_idf=False, vect__ngram_range=(1, 1), score=0.8834152171026424, total=   6.9s
 </pre>
 </div>
 </div>
@@ -13865,15 +13875,15 @@ comp.sys.ibm.pc.hardware       0.80      0.85      0.83       207
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>[Parallel(n_jobs=1)]: Done   2 out of   2 | elapsed:   50.6s remaining:    0.0s
-[Parallel(n_jobs=1)]: Done   2 out of   2 | elapsed:   50.7s finished
+<pre>[Parallel(n_jobs=1)]: Done   2 out of   2 | elapsed:   21.8s remaining:    0.0s
+[Parallel(n_jobs=1)]: Done   2 out of   2 | elapsed:   21.9s finished
 </pre>
 </div>
 </div>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[50]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -13887,8 +13897,8 @@ comp.sys.ibm.pc.hardware       0.80      0.85      0.83       207
         ngram_range=(1, 1), preprocessor=None, stop_words=None,
         strip...malizer(copy=True, norm=&#39;l2&#39;)), (&#39;clf&#39;, MultinomialNB(alpha=1.0, class_prior=None, fit_prior=True))]),
           fit_params=None, iid=&#39;warn&#39;, n_iter=1, n_jobs=None,
-          param_distributions={&#39;vect__ngram_range&#39;: [(1, 1), (1, 2), (2, 2)], &#39;tfidf__use_idf&#39;: [True, False], &#39;clf__alpha&#39;: &lt;scipy.stats._distn_infrastructure.rv_frozen object at 0x155a80358&gt;},
-          pre_dispatch=&#39;2*n_jobs&#39;, random_state=None, refit=True,
+          param_distributions={&#39;vect__ngram_range&#39;: [(1, 1), (1, 2), (2, 2)], &#39;tfidf__use_idf&#39;: [True, False], &#39;clf__alpha&#39;: &lt;scipy.stats._distn_infrastructure.rv_frozen object at 0x11d990b38&gt;},
+          pre_dispatch=&#39;2*n_jobs&#39;, random_state=551, refit=True,
           return_train_score=&#39;warn&#39;, scoring=None, verbose=10)</pre>
 </div>
 
@@ -13907,7 +13917,7 @@ comp.sys.ibm.pc.hardware       0.80      0.85      0.83       207
 </div></section><section>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">report</span><span class="p">(</span><span class="n">random_search</span><span class="o">.</span><span class="n">cv_results_</span><span class="p">)</span>
@@ -13931,40 +13941,439 @@ comp.sys.ibm.pc.hardware       0.80      0.85      0.83       207
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Model with rank: 1
-Mean validation score: 0.678 (std: 0.020)
-Parameters: {&#39;clf__alpha&#39;: 8.436949564869531, &#39;tfidf__use_idf&#39;: True, &#39;vect__ngram_range&#39;: (1, 2)}
+Mean validation score: 0.880 (std: 0.003)
+Parameters: {&#39;clf__alpha&#39;: 0.010640064047894703, &#39;tfidf__use_idf&#39;: False, &#39;vect__ngram_range&#39;: (1, 1)}
 
                           precision    recall  f1-score   support
 
-             alt.atheism       0.91      0.47      0.62       169
-           comp.graphics       0.89      0.63      0.73       195
- comp.os.ms-windows.misc       0.77      0.86      0.81       187
-comp.sys.ibm.pc.hardware       0.85      0.72      0.78       207
-   comp.sys.mac.hardware       0.95      0.70      0.80       191
-          comp.windows.x       0.97      0.58      0.73       229
-            misc.forsale       0.96      0.71      0.82       196
-               rec.autos       0.96      0.81      0.88       209
-         rec.motorcycles       0.90      0.93      0.91       184
-      rec.sport.baseball       0.88      0.94      0.91       178
-        rec.sport.hockey       0.89      0.98      0.93       201
-               sci.crypt       0.52      0.98      0.68       190
-         sci.electronics       0.86      0.62      0.72       186
-                 sci.med       0.93      0.76      0.84       188
-               sci.space       0.82      0.87      0.84       194
-  soc.religion.christian       0.33      1.00      0.50       214
-      talk.politics.guns       0.78      0.88      0.83       185
-   talk.politics.mideast       0.92      0.96      0.94       199
-      talk.politics.misc       1.00      0.29      0.46       156
-      talk.religion.misc       1.00      0.04      0.09       112
+             alt.atheism       0.92      0.90      0.91       178
+           comp.graphics       0.77      0.84      0.80       192
+ comp.os.ms-windows.misc       0.87      0.86      0.86       208
+comp.sys.ibm.pc.hardware       0.78      0.87      0.82       182
+   comp.sys.mac.hardware       0.89      0.88      0.89       188
+          comp.windows.x       0.94      0.89      0.91       212
+            misc.forsale       0.88      0.88      0.88       192
+               rec.autos       0.93      0.92      0.93       186
+         rec.motorcycles       0.99      0.96      0.97       209
+      rec.sport.baseball       0.99      0.96      0.97       201
+        rec.sport.hockey       0.95      0.99      0.97       206
+               sci.crypt       0.96      0.97      0.96       192
+         sci.electronics       0.90      0.87      0.89       195
+                 sci.med       0.96      0.95      0.96       197
+               sci.space       0.96      0.97      0.97       186
+  soc.religion.christian       0.85      0.97      0.91       216
+      talk.politics.guns       0.84      0.98      0.90       162
+   talk.politics.mideast       0.94      0.96      0.95       182
+      talk.politics.misc       0.95      0.84      0.89       160
+      talk.religion.misc       0.96      0.58      0.72       126
 
-               micro avg       0.76      0.76      0.76      3770
-               macro avg       0.85      0.74      0.74      3770
-            weighted avg       0.85      0.76      0.76      3770
+               micro avg       0.91      0.91      0.91      3770
+               macro avg       0.91      0.90      0.90      3770
+            weighted avg       0.91      0.91      0.91      3770
 
 </pre>
 </div>
 </div>
 
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Customizing-the-Pipeline">Customizing the Pipeline<a class="anchor-link" href="#Customizing-the-Pipeline">&#182;</a></h1>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Custom-Transformers">Custom Transformers<a class="anchor-link" href="#Custom-Transformers">&#182;</a></h2><p>Assignment 1 asked you to create custom features. How could we add similar features to our SKLearn pipeline? We'll be working off of <a href="https://scikit-learn.org/0.18/auto_examples/hetero_feature_union.html">an example in the SKLearn docs</a>.</p>
+<p>We'll have to create our own classes of the same polymorphic type that the <a href="https://scikit-learn.org/stable/modules/generated/sklearn.pipeline.Pipeline.html"><strong>Pipeline</strong> class</a> expects. Estimators (i.e. ML Models) and Transformers both extend two base classes in SKLearn:</p>
+<ul>
+<li><p><em>Transformers and estimators</em> both extend the <a href="https://scikit-learn.org/stable/modules/generated/sklearn.base.BaseEstimator.html"><strong>BaseEstimator</strong> class</a></p>
+</li>
+<li><p><em>Transformers</em> also extend the <a href="https://sklearn.org/modules/generated/sklearn.base.TransformerMixin.html"><strong>TransformerMixin</strong> class</a></p>
+</li>
+<li><p><em>Estimators</em> also extend the <a href="https://scikit-learn.org/stable/modules/generated/sklearn.base.ClassifierMixin.html"><strong>ClassifierMixin</strong> class</a></p>
+</li>
+</ul>
+<p>Let's take another look at a NewsGroup document to inform our new feature choices</p>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Notice the seperate subject and body. The subject carries concise information </span>
+<span class="c1"># that is lost by performing tfidf BoW on the whole. </span>
+<span class="nb">print</span><span class="p">(</span><span class="n">X_train</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>From: jason@ab20.larc.nasa.gov (Jason Austin)
+Subject: Polls (was Re: Top Ten Excuses for Slick Willie&#39;s Record-Setting Disapproval Rati)
+Organization: NASA Langley Research Center, Hampton, VA
+Lines: 37
+Reply-To: Jason C. Austin &lt;j.c.austin@larc.nasa.gov&gt;
+NNTP-Posting-Host: ab20.larc.nasa.gov
+In-reply-to: libwca@emory.edu&#39;s message of 14 Apr 93 20:31:09 GMT
+
+In article &lt;2680@emoryu1.cc.emory.edu&gt; libwca@emory.edu (Bill Anderson) writes:
+-&gt; : 	According to a ``CNN Poll&#39;&#39; to key reason for Clinton&#39;s low
+-&gt; : approval rating is people are angry about him not moving fast enough
+-&gt; : on gays in the military.  I just burst out laughing when I heard this;
+-&gt; : what planet do these CNN people live on anyway?
+-&gt; : --
+-&gt; : Jason C. Austin
+-&gt; : j.c.austin@larc.nasa.gov       
+-&gt; 
+-&gt; Dunno, man... that sounds pretty damned unlikely to me, too,
+-&gt; although it&#39;s certainly one of the reasons I&#39;m pissed off at him.
+-&gt; Maybe the sample was taken entirely from my fellow memebers of the
+-&gt; Cultural Elite?
+-&gt; 
+-&gt; Jason, can you quote some of these poll questions?
+-&gt; 
+-&gt; Thanks,
+-&gt; Bill
+-&gt; v
+
+	I&#39;ve never seen CNN give out the poll questions on the air.
+If you sent them a letter asking for them, you might get them.  Here&#39;s
+my guess of how part of a session might look:
+
+Question: Do you approve of Clinton&#39;s performance?
+Answer: No
+Questions: Do you disapprove due to the gays in the military issue?
+Answer: Yes
+
+Conclusion: Clinton has a low approval rating because he&#39;s not moving
+fast enough on gays in the military.
+
+
+	I think any group truly dedicated to reporting the news would
+not use manufactured news like polls.
+
+						-Jason
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>As seen in the document we might gain from looking at the subject and body seperately.</p>
+<p>We'll be adding <strong>three custom features</strong>:</p>
+<ul>
+<li>BoW for the <em>subject line</em></li>
+<li>BoW for the <em>body</em> </li>
+<li>Vector of body <em>text stats</em><ul>
+<li>length of text</li>
+<li>number of sentences</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The pipeline passes data in a sequential manner from transformer to transformer (and finally to an estimator). Let's get a <em>rough</em> idea of what the flow looks like in our case:</p>
+<ul>
+<li>Splitting the subject and body</li>
+<li>Calculating the custom <em>text stats</em></li>
+<li>Calculating BoW features for <em>subject line</em> and <em>body</em></li>
+</ul>
+<p>Finally we will also have to consider how to merge all of these features</p>
+
+</div>
+</div>
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Splitting-the-Subject-and-Body">Splitting the Subject and Body<a class="anchor-link" href="#Splitting-the-Subject-and-Body">&#182;</a></h2><ul>
+<li>We will seperate the documents into a dictionary that contains <code>subject</code> and <code>body</code> keys, so that dowstream transformers can access the seperated data</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.datasets.twenty_newsgroups</span> <span class="k">import</span> <span class="n">strip_newsgroup_footer</span>
+<span class="kn">from</span> <span class="nn">sklearn.datasets.twenty_newsgroups</span> <span class="k">import</span> <span class="n">strip_newsgroup_quoting</span>
+<span class="kn">from</span> <span class="nn">sklearn.base</span> <span class="k">import</span> <span class="n">BaseEstimator</span>
+<span class="kn">from</span> <span class="nn">sklearn.base</span> <span class="k">import</span> <span class="n">TransformerMixin</span>
+
+<span class="k">class</span> <span class="nc">SubjectBodyExtractor</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Extract the subject &amp; body from a usenet post in a single pass.</span>
+
+<span class="sd">    Takes a sequence of strings and produces a dict of sequences.  Keys are</span>
+<span class="sd">    `subject` and `body`.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">posts</span><span class="p">):</span>
+        <span class="n">features</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">recarray</span><span class="p">(</span><span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">posts</span><span class="p">),),</span>
+                               <span class="n">dtype</span><span class="o">=</span><span class="p">[(</span><span class="s1">&#39;subject&#39;</span><span class="p">,</span> <span class="nb">object</span><span class="p">),</span> <span class="p">(</span><span class="s1">&#39;body&#39;</span><span class="p">,</span> <span class="nb">object</span><span class="p">)])</span>
+        <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">text</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">posts</span><span class="p">):</span>
+            <span class="n">headers</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">bod</span> <span class="o">=</span> <span class="n">text</span><span class="o">.</span><span class="n">partition</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n\n</span><span class="s1">&#39;</span><span class="p">)</span>
+            <span class="n">bod</span> <span class="o">=</span> <span class="n">strip_newsgroup_footer</span><span class="p">(</span><span class="n">bod</span><span class="p">)</span>
+            <span class="n">bod</span> <span class="o">=</span> <span class="n">strip_newsgroup_quoting</span><span class="p">(</span><span class="n">bod</span><span class="p">)</span>
+            <span class="n">features</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">bod</span>
+
+            <span class="n">prefix</span> <span class="o">=</span> <span class="s1">&#39;Subject:&#39;</span>
+            <span class="n">sub</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">headers</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;</span><span class="se">\n</span><span class="s1">&#39;</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">line</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">prefix</span><span class="p">):</span>
+                    <span class="n">sub</span> <span class="o">=</span> <span class="n">line</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">prefix</span><span class="p">):]</span>
+                    <span class="k">break</span>
+            <span class="n">features</span><span class="p">[</span><span class="s1">&#39;subject&#39;</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">sub</span>
+
+        <span class="k">return</span> <span class="n">features</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Selecting-the-Right-Data">Selecting the Right Data<a class="anchor-link" href="#Selecting-the-Right-Data">&#182;</a></h2><ul>
+<li>Remember that all data manipulation within the pipeline must be by a transformer that extends the proper class, even for something as simple as selecting a dictionary key.</li>
+</ul>
+
+</div>
+</div>
+</div></section><section>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.base</span> <span class="k">import</span> <span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span>
+<span class="k">class</span> <span class="nc">ItemSelector</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;For data grouped by feature, select subset of data at a provided key.</span>
+
+<span class="sd">    The data is expected to be stored in a 2D data structure, where the first</span>
+<span class="sd">    index is over features and the second is over samples.  i.e.</span>
+
+<span class="sd">    &gt;&gt; data = {&#39;a&#39;: [1, 5, 2, 5, 2, 8],</span>
+<span class="sd">               &#39;b&#39;: [9, 4, 1, 4, 1, 3]}</span>
+<span class="sd">    &gt;&gt; ds = ItemSelector(key=&#39;a&#39;)</span>
+<span class="sd">    &gt;&gt; data[&#39;a&#39;] == ds.transform(data)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">key</span> <span class="o">=</span> <span class="n">key</span>
+
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">data_dict</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">data_dict</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">key</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div></section></section><section><section>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Nested-Pipelines">Nested Pipelines<a class="anchor-link" href="#Nested-Pipelines">&#182;</a></h2><ul>
+<li>To simplify working with more complicated flows, <strong>pipelines can be nested</strong> (we'll talk about how later)</li>
+<li>We have the necessary components for text and body BoW features. <em>Let's extract these features</em></li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction.text</span> <span class="k">import</span> <span class="n">TfidfVectorizer</span>
+<span class="kn">from</span> <span class="nn">sklearn.decomposition</span> <span class="k">import</span> <span class="n">TruncatedSVD</span>
+<span class="c1"># Pipeline for pulling features from the post&#39;s subject line</span>
+<span class="n">subject_pipeline</span> <span class="o">=</span>  <span class="n">Pipeline</span><span class="p">([</span>
+    <span class="p">(</span><span class="s1">&#39;selector&#39;</span><span class="p">,</span> <span class="n">ItemSelector</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s1">&#39;subject&#39;</span><span class="p">)),</span>
+    <span class="p">(</span><span class="s1">&#39;tfidf&#39;</span><span class="p">,</span> <span class="n">TfidfVectorizer</span><span class="p">(</span><span class="n">min_df</span><span class="o">=</span><span class="mi">50</span><span class="p">)),</span>
+<span class="p">])</span>
+
+<span class="c1"># Pipeline for standard bag-of-words model for body</span>
+<span class="n">body_pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([</span>
+    <span class="p">(</span><span class="s1">&#39;selector&#39;</span><span class="p">,</span> <span class="n">ItemSelector</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s1">&#39;body&#39;</span><span class="p">)),</span>
+    <span class="p">(</span><span class="s1">&#39;tfidf&#39;</span><span class="p">,</span> <span class="n">TfidfVectorizer</span><span class="p">()),</span>
+    <span class="p">(</span><span class="s1">&#39;best&#39;</span><span class="p">,</span> <span class="n">TruncatedSVD</span><span class="p">(</span><span class="n">n_components</span><span class="o">=</span><span class="mi">50</span><span class="p">)),</span>
+    <span class="c1"># TruncatedSVD simply does dimensionality reduction</span>
+    <span class="c1"># We are picking the &quot;n_components&quot; most informative words</span>
+<span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Text-Stats-Feature">Text Stats Feature<a class="anchor-link" href="#Text-Stats-Feature">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">class</span> <span class="nc">TextStats</span><span class="p">(</span><span class="n">BaseEstimator</span><span class="p">,</span> <span class="n">TransformerMixin</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Extract features from each document for DictVectorizer&quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="nf">fit</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">transform</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">posts</span><span class="p">):</span>
+        <span class="k">return</span> <span class="p">[{</span><span class="s1">&#39;length&#39;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">text</span><span class="p">),</span>
+                 <span class="s1">&#39;num_sentences&#39;</span><span class="p">:</span> <span class="n">text</span><span class="o">.</span><span class="n">count</span><span class="p">(</span><span class="s1">&#39;.&#39;</span><span class="p">)}</span>
+                <span class="k">for</span> <span class="n">text</span> <span class="ow">in</span> <span class="n">posts</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.feature_extraction</span> <span class="k">import</span> <span class="n">DictVectorizer</span>
+
+<span class="c1">#Pipeline for pulling ad hoc features from post&#39;s body</span>
+<span class="n">body_stats_pipeline</span> <span class="o">=</span>  <span class="n">Pipeline</span><span class="p">([</span>
+    <span class="p">(</span><span class="s1">&#39;selector&#39;</span><span class="p">,</span> <span class="n">ItemSelector</span><span class="p">(</span><span class="n">key</span><span class="o">=</span><span class="s1">&#39;body&#39;</span><span class="p">)),</span>
+    <span class="p">(</span><span class="s1">&#39;stats&#39;</span><span class="p">,</span> <span class="n">TextStats</span><span class="p">()),</span>  <span class="c1"># returns a list of dicts</span>
+    <span class="p">(</span><span class="s1">&#39;vect&#39;</span><span class="p">,</span> <span class="n">DictVectorizer</span><span class="p">()),</span>  <span class="c1"># list of dicts -&gt; feature matrix</span>
+<span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Combining-Features">Combining Features<a class="anchor-link" href="#Combining-Features">&#182;</a></h2><ul>
+<li><strong>Remember:</strong> Data flows sequentially in the pipeline. </li>
+</ul>
+<p>How do we go about extracting several features in parallel from the same data?</p>
+<ul>
+<li>SKLearn provides a <a href="https://scikit-learn.org/0.18/modules/generated/sklearn.pipeline.FeatureUnion.html"><strong>FeatureUnion</strong> class</a> that allows us to pass the data from the previous step to several nested pipelines.</li>
+<li>FeatureUnion works by <strong>concatenating</strong> our feature vectors</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.pipeline</span> <span class="k">import</span> <span class="n">FeatureUnion</span>
+
+<span class="n">custom_features</span> <span class="o">=</span> <span class="n">FeatureUnion</span><span class="p">(</span>
+        <span class="n">transformer_list</span><span class="o">=</span><span class="p">[</span>
+            <span class="c1"># The custom feature transformers</span>
+            <span class="p">(</span><span class="s1">&#39;subject&#39;</span><span class="p">,</span> <span class="n">subject_pipeline</span><span class="p">),</span>
+            <span class="p">(</span><span class="s1">&#39;body_bow&#39;</span><span class="p">,</span> <span class="n">body_pipeline</span><span class="p">),</span>
+            <span class="p">(</span><span class="s1">&#39;body_stats&#39;</span><span class="p">,</span> <span class="n">body_stats_pipeline</span><span class="p">),</span>
+        <span class="p">],</span>
+    
+        <span class="c1"># weight feature components in FeatureUnion</span>
+        <span class="n">transformer_weights</span><span class="o">=</span><span class="p">{</span>
+            <span class="s1">&#39;subject&#39;</span><span class="p">:</span> <span class="mf">0.8</span><span class="p">,</span>
+            <span class="s1">&#39;body_bow&#39;</span><span class="p">:</span> <span class="mf">0.5</span><span class="p">,</span>
+            <span class="s1">&#39;body_stats&#39;</span><span class="p">:</span> <span class="mf">1.0</span><span class="p">,</span>
+        <span class="p">},</span>
+    <span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Putting-it-all-together">Putting it all together<a class="anchor-link" href="#Putting-it-all-together">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.svm</span> <span class="k">import</span> <span class="n">SVC</span>
+
+<span class="n">custom_feature_pipeline</span> <span class="o">=</span> <span class="n">Pipeline</span><span class="p">([</span>
+    <span class="c1"># Extract the subject &amp; body</span>
+    <span class="p">(</span><span class="s1">&#39;subjectbody&#39;</span><span class="p">,</span> <span class="n">SubjectBodyExtractor</span><span class="p">()),</span>
+
+    <span class="c1"># Use FeatureUnion to combine the features from subject and body</span>
+    <span class="p">(</span><span class="s1">&#39;union&#39;</span><span class="p">,</span> <span class="n">custom_features</span><span class="p">),</span>
+    <span class="c1"># Use a SVC classifier on the combined features</span>
+    <span class="p">(</span><span class="s1">&#39;svc&#39;</span><span class="p">,</span> <span class="n">SVC</span><span class="p">(</span><span class="n">kernel</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">))</span>
+
+<span class="p">])</span>
+
+<span class="n">subj</span> <span class="o">=</span> <span class="n">SubjectBodyExtractor</span><span class="p">()</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">)</span>
+<span class="n">custom_feature_pipeline</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X_train</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">y_train</span><span class="p">)</span>
+<span class="n">y_pred</span> <span class="o">=</span> <span class="n">custom_feature_pipeline</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">y_test</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">metrics</span><span class="o">.</span><span class="n">classification_report</span><span class="p">(</span><span class="n">y_pred</span><span class="p">,</span> <span class="n">y_test</span><span class="p">))</span>
+</pre></div>
+
+    </div>
 </div>
 </div>
 
@@ -13980,6 +14389,7 @@ comp.sys.ibm.pc.hardware       0.85      0.72      0.78       207
 <li>recording parameters and outputs</li>
 </ul>
 </li>
+<li>When using jupyter be careful for namespace bugs</li>
 </ul>
 
 </div>
